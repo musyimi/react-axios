@@ -1,3 +1,5 @@
+import 'bulma/css/bulma.css';
+
 import { useState } from 'react';
 
 function SearchBar({ onSubmit }) {
@@ -17,7 +19,7 @@ function SearchBar({ onSubmit }) {
 
     return <div>
         <form onSubmit={handleFormSubmit}>
-           <input value={term} onChange={handleChange} />
+           <input value={term} onChange={handleChange} class="input is-normal" type="text" placeholder="Search"></input>
         </form>
         
     </div>
